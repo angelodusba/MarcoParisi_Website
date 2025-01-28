@@ -1,0 +1,23 @@
+{
+  "name": "marcoparisi_website",
+  "version": "1.0.0",
+  "description": "Website of Marco Parisi",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass --watch --quiet ./sass/main.scss ./css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angelodusba/MarcoParisi_Website.git"
+  },
+  "author": "Angelo Squillino",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/angelodusba/MarcoParisi_Website/issues"
+  },
+  "homepage": "https://github.com/angelodusba/MarcoParisi_Website#readme",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.80.6"
+  }
+}
