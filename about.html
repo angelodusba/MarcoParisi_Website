@@ -12,7 +12,7 @@
     <script defer src="js/videos.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <title>Marco Parisi</title>
-    <link rel="icon" href="./media/logo.png" type="image/png" />
+    <link rel="icon" href="./media/Logo.png" type="image/png" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
@@ -23,8 +23,8 @@
       <nav
         class="navbar navbar-expand-lg text-secondary justify-content-between bg-transparent py-3">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="logo" src="./media/logo.png" alt="Marco Parisi Logo" />
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo" src="./media/Logo.png" alt="Marco Parisi Logo" />
           </a>
           <button
             class="navbar-toggler border-0 shadow-none text-secondary"
@@ -51,15 +51,12 @@
             id="navbarNav">
             <ul class="navbar-nav justify-content-end">
               <li class="nav-item">
-                <a class="nav-link" href="./index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="./index.html"
+                  >Home</a
+                >
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link fs-6 active"
-                  aria-current="page"
-                  href="./about.html"
-                  >About</a
-                >
+                <a class="nav-link fs-6 active" href="./about.html">About</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Works</a>
@@ -73,50 +70,79 @@
       </nav>
     </header>
     <main>
-      <div style="padding: 56.25% 0 0 0; position: relative">
-        <iframe
-          src="https://player.vimeo.com/video/1050791948?autoplay=1&loop=1&muted=1&background=1"
-          allow="autoplay"
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
-          title="HomeoWeb"></iframe>
+      <div class="ratio ratio-16x9">
+        <img src="./media/Bio.jpg" alt="Bio" />
       </div>
-      <script src="https://player.vimeo.com/api/player.js"></script>
-
-      <div class="container-fluid flex mt-5">
-        <div class="row p-3">
-          <!-- Content for first row -->
-          <div class="col-md-6 col-12">
-            <!-- Content for first column -->
-            <h4 class="text-center text-secondary">
-              1 CHEF KAREN SHU - AND_OR RESTAURANT
-            </h4>
-            <div
-              class="video-container d-flex justify-content-center align-items-center"
-              data-vimeo-id="1039495252"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT.jpg"></div>
-          </div>
-          <div class="col-md-6 col-12">
-            <!-- Content for second column -->
-            <h4 class="text-center text-secondary">
-              2 CHEF KAREN SHU - AND_OR RESTAURANT
-            </h4>
-            <div
-              class="video-container d-flex justify-content-center align-items-center"
-              data-vimeo-id="1039495252"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT.jpg"></div>
-          </div>
-        </div>
-        <div class="row">
-          <!-- Content for second row -->
-          <div class="col-12 col-md-6">
-            <!-- Content for first column -->
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- Content for second column -->
-          </div>
-        </div>
-      </div>
+      <section class="mt-5">
+        <p class="fs-2 fw-bold text-primary text-center">About me</p>
+        <p class="fs-5 fw-medium text-secondary text-center m-3">
+          Marco is an Italian filmmaker whose passion for evocative imagery and
+          visual storytelling knows no bounds. He began his career in Italy as a
+          photographer and cameraman in the concert scene, honing his skills at
+          the Italian Academy of Visual Communication ILAS in Naples while
+          actively working in the field. After completing his studies, he
+          continued his training by collaborating with Italy’s leading
+          television studios, including Mediaset, Rai, and Discovery Plus in
+          Rome. Driven by the desire to expand his creative and professional
+          horizons, Marco decided to move abroad, where he found new inspiration
+          and growth opportunities. Today, he works between Italy, Belgium, and
+          London, creating brand films, commercials, fashion content, corporate
+          videos, event coverage, and content for leading social platforms. His
+          approach to storytelling is fresh and innovative, while his
+          photographic skills bring each project to life through unique and
+          engaging visuals. With boundless imagination and an unwavering work
+          ethic, Marco constantly pushes himself beyond his limits, exploring
+          new narrative and visual techniques. For Marco, artistic
+          experimentation is essential and forms the foundation of every
+          project. He is always striving to expand his skills and training,
+          consistently working towards improvement. Each project is custom-made,
+          with a personalised narrative that reflects the essence of the client.
+        </p>
+      </section>
     </main>
-    <footer></footer>
+    <footer class="text-center text-secondary">
+      <!-- Grid container -->
+      <div class="grid px-3 mt-4">
+        <p class="my-4">
+          Interested in working together? Please email me directly at the
+          following address:
+          <a class="link-underline" href="mailto:parisi.visual@gmail.com"
+            >parisi.visual@gmail.com</a
+          >
+        </p>
+        <a href="./index.html">
+          <img
+            class="my-4"
+            src="./media/Logo.png"
+            alt="Marco Parisi Logo"
+            style="max-height: 70px" />
+        </a>
+        <p class="mt-4 mb-2 fs-5 fw-semibold">LONDON,UK</p>
+        <p class="my-2 fs-5 fw-semibold">BELGIUM,BE</p>
+        <p class="my-2 fs-5 fw-semibold">ITALY,IT</p>
+      </div>
+      <!-- Grid container -->
+      <div
+        class="text-center p-3"
+        style="background-color: rgba(0, 0, 0, 0.05)">
+        <!-- Section: Social media -->
+        <section class="mb-3">
+          <!-- Instagram -->
+          <a
+            data-mdb-ripple-init
+            class="btn btn-link btn-lg text-secondary m-1 position-relative insta-hover"
+            href="https://www.instagram.com/maarrcoom?igsh=eXk0cXVlNW5tOHph"
+            role="button"
+            data-mdb-ripple-color="dark"
+            ><i class="bi bi-instagram"></i
+          ></a>
+        </section>
+        <!-- Section: Social media -->
+        <!-- Copyright -->
+        © 2025 Copyright:
+        <a href="./index.html">MarcoParisi.com</a>
+        <!-- Copyright -->
+      </div>
+    </footer>
   </body>
 </html>

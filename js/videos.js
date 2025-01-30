@@ -2,7 +2,7 @@
 
 // Function to initialize the video containers
 function initializeVideoContainers() {
-  const videoContainers = document.querySelectorAll(".video-container");
+  const videoContainers = document.querySelectorAll("div[data-vimeo-id]");
 
   videoContainers.forEach((container) => {
     // Extract data attributes
@@ -13,6 +13,7 @@ function initializeVideoContainers() {
     const img = document.createElement("img");
     img.src = thumbnailSrc;
     img.alt = "Video Thumbnail";
+    //img.classList = "d-block w-80";
     container.appendChild(img);
 
     // Event listener for click
