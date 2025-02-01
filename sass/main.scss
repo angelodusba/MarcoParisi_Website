@@ -34,7 +34,7 @@ header {
 
 .logo {
   width: auto;
-  max-height: 48px;
+  max-height: 60px;
 }
 
 .nav-link:hover,
@@ -78,6 +78,7 @@ header {
 }
 
 div[data-vimeo-id] > * {
+  cursor: pointer;
   aspect-ratio: 16/9;
   width: auto;
   height: 70%;
@@ -85,6 +86,7 @@ div[data-vimeo-id] > * {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  //box-shadow: 0 4px 8px gray;
 }
 
 .video-container img,
