@@ -11915,13 +11915,22 @@ header {
 
 div[data-vimeo-id] > * {
   cursor: pointer;
+  pointer-events: all;
   aspect-ratio: 16/9;
   width: auto;
   height: 70%;
   position: absolute;
-  top: 50%;
+  top: 38%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.videoOverlay {
+  z-index: 10;
+}
+
+.col-12:has(.videoOverlay:hover) h4, .col-12:has(.videoOverlay:hover) .h4 {
+  color: #c2b418; /* Change to text-primary color */
 }
 
 .vertical {

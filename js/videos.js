@@ -8,6 +8,7 @@ function initializeVideoContainers() {
     // Extract data attributes
     const vimeoId = container.getAttribute("data-vimeo-id");
     const thumbnailSrc = container.getAttribute("data-thumbnail");
+    const overlay = container.querySelector(".videoOverlay");
 
     // Add the thumbnail image
     const img = document.createElement("img");
@@ -20,32 +21,27 @@ function initializeVideoContainers() {
     iframe.src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&background=1&muted=1`;
     iframe.allow = "autoplay";
     iframe.allowFullscreen = true;
-    // iframe.style.display = "none"; // Hide preloaded iframe
     iframe.style.opacity = "0"; // Initially hidden
     iframe.style.zIndex = "-1";
     iframe.style.transition = "opacity 0.5s ease-in-out";
     container.appendChild(iframe);
 
     // Event listener for hover
-    img.addEventListener("mouseenter", () => {
-      /*iframe.style.display = "block";
-      img.style.display = "none";*/
+    overlay.addEventListener("mouseenter", () => {
       iframe.style.opacity = "1"; // Fade in iframe
       iframe.style.zIndex = "1";
       img.style.opacity = "0"; // Fade out image
     });
 
     // Event listener for mouse leave
-    iframe.addEventListener("mouseleave", () => {
-      /*iframe.style.display = "none";
-      img.style.display = "block";*/
+    overlay.addEventListener("mouseleave", () => {
       iframe.style.zIndex = "-1";
       img.style.opacity = "1"; // Fade in image
       iframe.style.opacity = "0"; // Fade out iframe
     });
 
-    // Event listener for click on the image
-    container.addEventListener("click", () => {
+    // Event listener for click on the overlay
+    overlay.addEventListener("click", (e) => {
       // Redirect to a new page with the embedded video
       window.location.href = `video.html?id=${vimeoId}`;
     });
