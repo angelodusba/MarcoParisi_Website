@@ -11925,6 +11925,14 @@ div[data-vimeo-id] > * {
   transform: translate(-50%, -50%);
 }
 
+.vertical {
+  aspect-ratio: 9/16;
+}
+
+div[data-vimeo-id].vertical > * {
+  aspect-ratio: 9/16 !important;
+}
+
 .video-container img,
 .video-container iframe {
   display: block;
@@ -11958,6 +11966,15 @@ div[data-vimeo-id] > * {
 .insta-hover:hover::before {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+}
+
+.text-about {
+  text-align: justify !important;
+}
+@media (max-width: 768px) {
+  .text-about {
+    text-align: center !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -89,6 +89,15 @@ div[data-vimeo-id] > * {
   //box-shadow: 0 4px 8px gray;
 }
 
+.vertical {
+  aspect-ratio: 9/16;
+}
+
+div[data-vimeo-id].vertical > * {
+  //--bs-aspect-ratio: calc(9 / 16 * 100%);
+  aspect-ratio: 9/16 !important;
+}
+
 .video-container img,
 .video-container iframe {
   display: block;
@@ -122,4 +131,12 @@ div[data-vimeo-id] > * {
 .insta-hover:hover::before {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
+}
+
+.text-about {
+  @media (max-width: 768px) {
+    text-align: center !important;
+  }
+  text-align: justify !important;
+  //hyphens: auto;
 }
