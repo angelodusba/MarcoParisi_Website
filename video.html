@@ -9,7 +9,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
-    <script defer src="js/videos.js"></script>
+    <script defer src="js/singleVideo.js"></script>
     <script src="https://player.vimeo.com/api/player.js"></script>
     <title>Marco Parisi</title>
     <link rel="icon" href="./media/Logo.png" type="image/png" />
@@ -51,10 +51,7 @@
             id="navbarNav">
             <ul class="navbar-nav justify-content-end">
               <li class="nav-item">
-                <a
-                  class="nav-link fs-6 active"
-                  aria-current="page"
-                  href="./index.html"
+                <a class="nav-link" aria-current="page" href="./index.html"
                   >Home</a
                 >
               </li>
@@ -73,80 +70,11 @@
       </nav>
     </header>
     <main>
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://player.vimeo.com/video/1050791948?autoplay=1&loop=1&muted=1&background=1"
-          allow="autoplay"
-          title="Home"></iframe>
-      </div>
-      <div class="container-fluid flex mt-5">
-        <div class="row m-4">
-          <p class="fs-2 fw-bold text-primary text-center">Works</p>
-        </div>
-        <div class="row p-3">
-          <!-- Content for first row -->
-          <div class="col-md-6 col-12">
-            <!-- Content for first column -->
-            <h4 class="text-center text-secondary">
-              CHEF KAREN SHU - AND_OR RESTAURANT #1
-            </h4>
-            <div
-              class="ratio ratio-16x9 d-flex align-items-top justify-content-center"
-              data-vimeo-id="1052074599"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT.jpg"></div>
-          </div>
-          <div class="col-md-6 col-12">
-            <!-- Content for second column -->
-            <h4 class="text-center text-secondary">
-              CHEF KAREN SHU - AND_OR RESTAURANT #2
-            </h4>
-            <div
-              class="ratio ratio-16x9"
-              data-vimeo-id="1052082314"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT 2.jpg"></div>
-          </div>
-        </div>
-        <div class="row p-3">
-          <!-- Content for second row -->
-          <div class="col-12 col-md-6 text-secondary">
-            <!-- Content for first column -->
-            <h4 class="text-center">CHEF KAREN SHU - AND_OR RESTAURANT #3</h4>
-            <div
-              class="ratio ratio-16x9 d-flex align-items-center justify-content-center"
-              data-vimeo-id="1052074569"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT 3.jpg"></div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- Content for second column -->
-            <h4 class="text-center text-secondary">
-              JONO McCLERRY-TO SEE YOU AGAIN
-            </h4>
-            <div
-              class="ratio ratio-16x9"
-              data-vimeo-id="1052074734"
-              data-thumbnail="./media/JONO McCLERRY _TO SEE YOU AGAIN_[ROTTERDAM].jpg"></div>
-          </div>
-        </div>
-        <div class="row p-3">
-          <!-- Content for second row -->
-          <div class="col-12 col-md-6">
-            <!-- Content for first column -->
-            <h4 class="text-center text-secondary">
-              MARCO PARISI SHOWREEL 2022
-            </h4>
-            <div
-              class="ratio ratio-16x9 d-flex align-items-center justify-content-center"
-              data-vimeo-id="1052074620"
-              data-thumbnail="./media/MARCO PARISI SHOWREEL 2022.png"></div>
-          </div>
-          <div class="col-12 col-md-6">
-            <!-- Content for second column -->
-            <h4 class="text-center text-secondary">FRITES ATELIER AMSTERDAM</h4>
-            <div
-              class="ratio ratio-16x9 d-flex align-items-center justify-content-center"
-              data-vimeo-id="1052074660"
-              data-thumbnail="./media/fries atelier copy.jpg"></div>
-          </div>
+      <div
+        class="vh-100 container d-flex flex-column gap-4 justify-content-center align-items-center">
+        <h2 class="text-secondary"></h2>
+        <div id="videoWrapper" class="ratio h-75">
+          <iframe allow="autoplay" id="vimeoPlayer"></iframe>
         </div>
       </div>
       <hr class="m-auto border-primary w-75 border-1" />
