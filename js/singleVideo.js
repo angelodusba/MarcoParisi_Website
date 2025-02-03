@@ -17,7 +17,9 @@ if (document.referrer.includes("vertical.html")) {
 }
 
 // Set iframe src
+iframe.setAttribute("allowfullscreen", "");
 iframe.src = `https://player.vimeo.com/video/${vimeoId}`;
+iframe.allow = "autoplay; fullscreen;";
 
 const player = new Vimeo.Player(iframe);
 
