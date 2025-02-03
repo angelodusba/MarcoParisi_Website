@@ -18,7 +18,11 @@ function initializeVideoContainers() {
     container.appendChild(img);
 
     let iframe = document.createElement("iframe");
-    iframe.src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&background=1&muted=1`;
+    if (container.classList.contains("vertical")) {
+      iframe.src = `https://player.vimeo.com/video/${vimeoId}autoplay=1&background=1&muted=1`;
+    } else {
+      iframe.src = `https://player.vimeo.com/video/${vimeoId}?autoplay=1&background=1&muted=1`;
+    }
     iframe.allow = "autoplay";
     iframe.allowFullscreen = true;
     iframe.style.opacity = "0"; // Initially hidden

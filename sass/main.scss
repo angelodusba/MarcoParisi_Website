@@ -5,6 +5,7 @@ $secondary: #f0efdf;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import url(https://fonts.googleapis.com/css?family=League+Spartan:100,200,300,regular,500,600,700,800,900);
+
 body {
   font-family: "League Spartan", sans-serif;
 }
@@ -29,11 +30,12 @@ header {
 
 .nav-link {
   color: $secondary;
+  font-size: 1.1rem;
 }
 
 .navbar-nav .nav-link.active {
   color: $primary;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .logo {
@@ -47,15 +49,6 @@ header {
 .navbar-toggler:focus {
   color: $primary !important;
 }
-
-/*@media (max-width: 768px) {
-  .navbar-collapse {
-    justify-content: flex-end;
-  }
-  .navbar-nav {
-    width: auto;
-  }
-}*/
 
 @media (max-width: 768px) {
   .custom-offcanvas {
@@ -72,25 +65,16 @@ header {
   }
 }
 
-.video-container {
-  position: relative;
-  width: 100%;
+div[data-vimeo-id] {
   aspect-ratio: 16/9;
-  cursor: pointer;
-  overflow: hidden;
-  margin-bottom: 20px;
+  width: auto;
+  height: 70%;
 }
 
 div[data-vimeo-id] > * {
   cursor: pointer;
   pointer-events: all;
   aspect-ratio: 16/9;
-  width: auto;
-  height: 70%;
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .videoOverlay {
@@ -101,19 +85,14 @@ div[data-vimeo-id] > * {
   color: $primary; /* Change to text-primary color */
 }
 
-.vertical {
-  aspect-ratio: 9/16;
+div[data-vimeo-id].vertical {
+  aspect-ratio: 9/16 !important;
+  height: auto !important;
+  width: 70% !important;
 }
 
 div[data-vimeo-id].vertical > * {
   aspect-ratio: 9/16 !important;
-}
-
-.video-container img,
-.video-container iframe {
-  display: block;
-  width: 80%;
-  height: auto;
 }
 
 .insta-hover {
@@ -149,5 +128,4 @@ div[data-vimeo-id].vertical > * {
     text-align: center !important;
   }
   text-align: justify !important;
-  //hyphens: auto;
 }

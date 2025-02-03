@@ -11869,11 +11869,12 @@ header {
 
 .nav-link {
   color: #f0efdf;
+  font-size: 1.1rem;
 }
 
 .navbar-nav .nav-link.active {
   color: #c2b418;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .logo {
@@ -11888,14 +11889,6 @@ header {
   color: #c2b418 !important;
 }
 
-/*@media (max-width: 768px) {
-  .navbar-collapse {
-    justify-content: flex-end;
-  }
-  .navbar-nav {
-    width: auto;
-  }
-}*/
 @media (max-width: 768px) {
   .custom-offcanvas {
     width: auto;
@@ -11909,25 +11902,16 @@ header {
     align-items: flex-end;
   }
 }
-.video-container {
-  position: relative;
-  width: 100%;
+div[data-vimeo-id] {
   aspect-ratio: 16/9;
-  cursor: pointer;
-  overflow: hidden;
-  margin-bottom: 20px;
+  width: auto;
+  height: 70%;
 }
 
 div[data-vimeo-id] > * {
   cursor: pointer;
   pointer-events: all;
   aspect-ratio: 16/9;
-  width: auto;
-  height: 70%;
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .videoOverlay {
@@ -11938,19 +11922,14 @@ div[data-vimeo-id] > * {
   color: #c2b418; /* Change to text-primary color */
 }
 
-.vertical {
-  aspect-ratio: 9/16;
+div[data-vimeo-id].vertical {
+  aspect-ratio: 9/16 !important;
+  height: auto !important;
+  width: 70% !important;
 }
 
 div[data-vimeo-id].vertical > * {
   aspect-ratio: 9/16 !important;
-}
-
-.video-container img,
-.video-container iframe {
-  display: block;
-  width: 80%;
-  height: auto;
 }
 
 .insta-hover {
