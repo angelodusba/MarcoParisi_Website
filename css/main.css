@@ -11932,19 +11932,19 @@ div[data-vimeo-id].vertical > * {
   aspect-ratio: 9/16 !important;
 }
 
-.insta-hover {
+.social-hover {
   transition: color 0.3s ease-in-out;
 }
 
-.insta-hover:hover {
+.social-hover:hover {
   color: var(--bs-primary) !important; /* Yellow */
 }
 
 /* Create the lighter circle */
-.insta-hover::before {
+.social-hover::before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
   width: 2.5rem;
   height: 2.5rem;
@@ -11955,7 +11955,7 @@ div[data-vimeo-id].vertical > * {
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.insta-hover:hover::before {
+.social-hover:hover::before {
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
