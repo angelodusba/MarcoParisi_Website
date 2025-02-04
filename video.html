@@ -10,7 +10,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"></script>
     <script defer src="js/singleVideo.js"></script>
-    <script defer src="https://player.vimeo.com/api/player.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <title>Marco Parisi</title>
     <link rel="icon" href="./media/Logo.png" type="image/png" />
     <link
@@ -74,7 +74,10 @@
         class="vh-100 container d-flex flex-column gap-4 justify-content-center align-items-center">
         <h2 class="text-secondary"></h2>
         <div id="videoWrapper" class="ratio h-75">
-          <iframe allow="autoplay" id="vimeoPlayer"></iframe>
+          <iframe
+            allow="autoplay; fullscreen;"
+            id="vimeoPlayer"
+            allowfullscreen></iframe>
         </div>
       </div>
       <hr class="m-auto border-primary w-75 border-1" />
