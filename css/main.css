@@ -11882,6 +11882,12 @@ header {
   max-height: 60px;
 }
 
+@media (max-height: 50vh) {
+  .logo-vertical {
+    max-height: 50px;
+  }
+}
+
 .nav-link:hover,
 .nav-link:focus,
 .navbar-toggler:hover,
