@@ -19,201 +19,212 @@
     <link href="./css/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav
-        class="navbar navbar-expand-lg text-secondary justify-content-between bg-transparent py-3">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">
-            <img class="logo" src="./media/Logo.png" alt="Marco Parisi Logo" />
+    <div id="main-content" class="d-none">
+      <header>
+        <nav
+          class="navbar navbar-expand-lg text-secondary justify-content-between bg-transparent py-3">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <img
+                class="logo"
+                src="./media/Logo.png"
+                alt="Marco Parisi Logo" />
+            </a>
+            <button
+              class="navbar-toggler border-0 shadow-none text-secondary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                fill="currentColor"
+                class="bi bi-list text-reset"
+                viewBox="0 0 16 16">
+                <path
+                  fill-rule="evenodd"
+                  d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+              </svg>
+            </button>
+            <div
+              class="collapse navbar-collapse justify-content-end custom-offcanvas"
+              id="navbarNav">
+              <ul class="navbar-nav justify-content-end">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./works.html">Works</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./vertical.html">Vertical</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="ratio ratio-16x9">
+          <iframe
+            id="background-video"
+            src="https://player.vimeo.com/video/1053048677?h=3cc5430f96&amp;autoplay=1&loop=1&muted=1&background=1&quality=1080p"
+            allow="autoplay"
+            title="Home"></iframe>
+        </div>
+        <div class="container-fluid flex mt-5">
+          <div class="row m-4">
+            <p class="fs-2 fw-bold text-primary text-center">WORKS</p>
+          </div>
+          <div class="row pb-4 pb-md-3 px-3 pt-3 gap-5 gap-md-0">
+            <!-- Content for first row -->
+            <div class="col-md-6 col-12 text-secondary">
+              <!-- Content for first column -->
+              <div
+                class="ratio ratio-16x9 mx-auto mb-3"
+                data-vimeo-id="1053025563?"
+                data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT.jpg">
+                <div class="videoOverlay bg-transparent"></div>
+              </div>
+              <h4 class="text-center">CHEF KAREN SHU - AND_OR RESTAURANT #1</h4>
+            </div>
+            <div class="col-md-6 col-12 text-secondary">
+              <!-- Content for second column -->
+              <div
+                class="ratio ratio-16x9 mx-auto mb-3"
+                data-vimeo-id="1053023029?"
+                data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT 2.jpg">
+                <div class="videoOverlay bg-transparent"></div>
+              </div>
+              <h4 class="text-center">CHEF KAREN SHU - AND_OR RESTAURANT #2</h4>
+            </div>
+          </div>
+          <div class="row pb-4 pb-md-3 px-3 pt-3 gap-5 gap-md-0">
+            <!-- Content for second row -->
+            <div class="col-12 col-md-6 text-secondary">
+              <!-- Content for first column -->
+              <div
+                class="ratio ratio-16x9 mx-auto mb-3"
+                data-vimeo-id="1053020610?"
+                data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT 3.jpg">
+                <div class="videoOverlay bg-transparent"></div>
+              </div>
+              <h4 class="text-center">CHEF KAREN SHU - AND_OR RESTAURANT #3</h4>
+            </div>
+            <div class="col-12 col-md-6 text-secondary">
+              <!-- Content for second column -->
+              <div
+                class="ratio ratio-16x9 mx-auto mb-3"
+                data-vimeo-id="1052984349?"
+                data-thumbnail="./media/JONO McCLERRY _TO SEE YOU AGAIN_[ROTTERDAM].jpg">
+                <div class="videoOverlay bg-transparent"></div>
+              </div>
+              <h4 class="text-center">JONO McCLERRY-TO SEE YOU AGAIN</h4>
+            </div>
+          </div>
+          <div class="row pb-4 pb-md-3 px-3 pt-3 gap-5 gap-md-0">
+            <!-- Content for second row -->
+            <div class="col-12 col-md-6 text-secondary">
+              <!-- Content for first column -->
+              <div
+                class="ratio ratio-16x9 mx-auto mb-3"
+                data-vimeo-id="1052979813?"
+                data-thumbnail="./media/MARCO PARISI SHOWREEL 2022.png">
+                <div class="videoOverlay bg-transparent"></div>
+              </div>
+              <h4 class="text-center">MARCO PARISI SHOWREEL 2022</h4>
+            </div>
+            <div class="col-12 col-md-6 text-secondary">
+              <!-- Content for second column -->
+              <div
+                class="ratio ratio-16x9 mx-auto mb-3"
+                data-vimeo-id="1052990804?"
+                data-thumbnail="./media/fries atelier copy.jpg">
+                <div class="videoOverlay bg-transparent"></div>
+              </div>
+              <h4 class="text-center">FRITES ATELIER AMSTERDAM</h4>
+            </div>
+          </div>
+        </div>
+        <hr class="m-auto border-primary w-75 border-1" />
+      </main>
+      <footer class="text-center text-secondary">
+        <!-- Grid container -->
+        <div class="grid px-3">
+          <p class="my-4">
+            Interested in working together? Please email me directly at the
+            following address:
+            <a class="link-underline" href="mailto:parisi.visual@gmail.com"
+              >parisi.visual@gmail.com</a
+            >
+          </p>
+          <a href="./index.html">
+            <img
+              class="my-4"
+              src="./media/Logo.png"
+              alt="Marco Parisi Logo"
+              style="max-height: 62px" />
           </a>
-          <button
-            class="navbar-toggler border-0 shadow-none text-secondary"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="32"
-              fill="currentColor"
-              class="bi bi-list text-reset"
-              viewBox="0 0 16 16">
-              <path
-                fill-rule="evenodd"
-                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
-            </svg>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end custom-offcanvas"
-            id="navbarNav">
-            <ul class="navbar-nav justify-content-end">
-              <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="./index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./about.html">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./works.html">Works</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./vertical.html">Vertical</a>
-              </li>
-            </ul>
-          </div>
+          <p class="mt-4 mb-2 fs-5 fw-semibold">LONDON,UK</p>
         </div>
-      </nav>
-    </header>
-    <main>
-      <div class="ratio ratio-16x9">
-        <iframe
-          src="https://player.vimeo.com/video/1053048677?h=3cc5430f96&amp;autoplay=1&loop=1&muted=1&background=1"
-          allow="autoplay"
-          title="Home"></iframe>
-      </div>
-      <div class="container-fluid flex mt-5">
-        <div class="row m-4">
-          <p class="fs-2 fw-bold text-primary text-center">WORKS</p>
+        <!-- Grid container -->
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.05)">
+          <!-- Section: Social media -->
+          <section class="mb-3">
+            <!-- Instagram -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-lg text-secondary m-1 position-relative social-hover"
+              href="https://www.instagram.com/maarrcoom?igsh=eXk0cXVlNW5tOHph"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-instagram"></i
+            ></a>
+            <!-- Linkedin -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-lg text-secondary m-1 position-relative social-hover"
+              href="https://www.linkedin.com/in/marco-parisi-83039ba6/"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+            <!-- Vimeo -->
+            <a
+              data-mdb-ripple-init
+              class="btn btn-link btn-lg text-secondary m-1 position-relative social-hover"
+              href="https://vimeo.com/user229573915"
+              role="button"
+              data-mdb-ripple-color="dark"
+              ><i class="bi bi-vimeo"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+          <!-- Copyright -->
+          © 2025 Copyright:
+          <a href="./index.html">MarcoParisi.com</a>
+          <!-- Copyright -->
         </div>
-        <div class="row pb-4 pb-md-3 px-3 pt-3 gap-5 gap-md-0">
-          <!-- Content for first row -->
-          <div class="col-md-6 col-12 text-secondary">
-            <!-- Content for first column -->
-            <div
-              class="ratio ratio-16x9 mx-auto mb-3"
-              data-vimeo-id="1053025563?"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT.jpg">
-              <div class="videoOverlay bg-transparent"></div>
-            </div>
-            <h4 class="text-center">CHEF KAREN SHU - AND_OR RESTAURANT #1</h4>
-          </div>
-          <div class="col-md-6 col-12 text-secondary">
-            <!-- Content for second column -->
-            <div
-              class="ratio ratio-16x9 mx-auto mb-3"
-              data-vimeo-id="1053023029?"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT 2.jpg">
-              <div class="videoOverlay bg-transparent"></div>
-            </div>
-            <h4 class="text-center">CHEF KAREN SHU - AND_OR RESTAURANT #2</h4>
-          </div>
-        </div>
-        <div class="row pb-4 pb-md-3 px-3 pt-3 gap-5 gap-md-0">
-          <!-- Content for second row -->
-          <div class="col-12 col-md-6 text-secondary">
-            <!-- Content for first column -->
-            <div
-              class="ratio ratio-16x9 mx-auto mb-3"
-              data-vimeo-id="1053020610?"
-              data-thumbnail="./media/CHEF KAREN SHU - AND_OR RESTAURANT 3.jpg">
-              <div class="videoOverlay bg-transparent"></div>
-            </div>
-            <h4 class="text-center">CHEF KAREN SHU - AND_OR RESTAURANT #3</h4>
-          </div>
-          <div class="col-12 col-md-6 text-secondary">
-            <!-- Content for second column -->
-            <div
-              class="ratio ratio-16x9 mx-auto mb-3"
-              data-vimeo-id="1052984349?"
-              data-thumbnail="./media/JONO McCLERRY _TO SEE YOU AGAIN_[ROTTERDAM].jpg">
-              <div class="videoOverlay bg-transparent"></div>
-            </div>
-            <h4 class="text-center">JONO McCLERRY-TO SEE YOU AGAIN</h4>
-          </div>
-        </div>
-        <div class="row pb-4 pb-md-3 px-3 pt-3 gap-5 gap-md-0">
-          <!-- Content for second row -->
-          <div class="col-12 col-md-6 text-secondary">
-            <!-- Content for first column -->
-            <div
-              class="ratio ratio-16x9 mx-auto mb-3"
-              data-vimeo-id="1052979813?"
-              data-thumbnail="./media/MARCO PARISI SHOWREEL 2022.png">
-              <div class="videoOverlay bg-transparent"></div>
-            </div>
-            <h4 class="text-center">MARCO PARISI SHOWREEL 2022</h4>
-          </div>
-          <div class="col-12 col-md-6 text-secondary">
-            <!-- Content for second column -->
-            <div
-              class="ratio ratio-16x9 mx-auto mb-3"
-              data-vimeo-id="1052990804?"
-              data-thumbnail="./media/fries atelier copy.jpg">
-              <div class="videoOverlay bg-transparent"></div>
-            </div>
-            <h4 class="text-center">FRITES ATELIER AMSTERDAM</h4>
-          </div>
-        </div>
-      </div>
-      <hr class="m-auto border-primary w-75 border-1" />
-    </main>
-    <footer class="text-center text-secondary">
-      <!-- Grid container -->
-      <div class="grid px-3">
-        <p class="my-4">
-          Interested in working together? Please email me directly at the
-          following address:
-          <a class="link-underline" href="mailto:parisi.visual@gmail.com"
-            >parisi.visual@gmail.com</a
-          >
-        </p>
-        <a href="./index.html">
-          <img
-            class="my-4"
-            src="./media/Logo.png"
-            alt="Marco Parisi Logo"
-            style="max-height: 62px" />
-        </a>
-        <p class="mt-4 mb-2 fs-5 fw-semibold">LONDON,UK</p>
-      </div>
-      <!-- Grid container -->
-      <div
-        class="text-center p-3"
-        style="background-color: rgba(0, 0, 0, 0.05)">
-        <!-- Section: Social media -->
-        <section class="mb-3">
-          <!-- Instagram -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-lg text-secondary m-1 position-relative social-hover"
-            href="https://www.instagram.com/maarrcoom?igsh=eXk0cXVlNW5tOHph"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-instagram"></i
-          ></a>
-          <!-- Linkedin -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-lg text-secondary m-1 position-relative social-hover"
-            href="https://www.linkedin.com/in/marco-parisi-83039ba6/"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-linkedin"></i
-          ></a>
-          <!-- Vimeo -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-lg text-secondary m-1 position-relative social-hover"
-            href="https://vimeo.com/user229573915"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-vimeo"></i
-          ></a>
-        </section>
-        <!-- Section: Social media -->
-        <!-- Copyright -->
-        © 2025 Copyright:
-        <a href="./index.html">MarcoParisi.com</a>
-        <!-- Copyright -->
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <div
+      id="loader"
+      class="d-flex justify-content-center align-items-center vh-100">
+      <div class="spinner-grow text-primary"></div>
+    </div>
   </body>
 </html>
