@@ -2,17 +2,19 @@
 
 // Function to initialize the video containers
 function initializeVideoContainers() {
-  const iframe = document.getElementById("background-video");
-  const loader = document.getElementById("loader");
-  const player = new Vimeo.Player(iframe);
-  const mainContent = document.getElementById("main-content");
+  if (!window.location.pathname.includes("works")) {
+    const iframe = document.getElementById("background-video");
+    const loader = document.getElementById("loader");
+    const player = new Vimeo.Player(iframe);
+    const mainContent = document.getElementById("main-content");
 
-  player.on("play", function () {
-    loader.style.display = "none"; // Hide preloader
-    mainContent.classList.remove("d-none");
-    mainContent.classList.add("d-block");
-    loader.classList.add("d-none");
-  });
+    player.on("play", function () {
+      loader.style.display = "none"; // Hide preloader
+      mainContent.classList.remove("d-none");
+      mainContent.classList.add("d-block");
+      loader.classList.add("d-none");
+    });
+  }
 
   const videoContainers = document.querySelectorAll("div[data-vimeo-id]");
 
@@ -62,13 +64,5 @@ function initializeVideoContainers() {
   });
 }
 
-/*Function to handle background video loading
-function backgroundVideoLoader() {
-
-}
-*/
 // Initialize on DOMContentLoaded
 document.addEventListener("DOMContentLoaded", initializeVideoContainers);
-
-/*
-document.addEventListener("DOMContentLoaded", backgroundVideoLoader);*/
