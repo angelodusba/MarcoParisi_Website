@@ -18,6 +18,6 @@
   "homepage": "https://github.com/angelodusba/MarcoParisi_Website#readme",
   "devDependencies": {
     "bootstrap": "^5.3.3",
-    "sass": "^1.80.6"
+    "sass": "^1.98.0"
   }
 }

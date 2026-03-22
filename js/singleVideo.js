@@ -10,14 +10,6 @@ const title = document.querySelector("h2");
 const iframe = document.getElementById("vimeoPlayer");
 
 iframe.src = `https://player.vimeo.com/video/${vimeoId}`;
-// Determine the aspect ratio based on the referring page
-if (document.referrer.includes("vertical.html")) {
-  videoWrapper.classList.add("vertical");
-} else {
-  //Remove the ?
-  iframe.src = iframe.src.slice(0, -1);
-  videoWrapper.classList.add("ratio-16x9");
-}
 
 // Set iframe src
 

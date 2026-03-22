@@ -33,7 +33,9 @@ function initializeVideoContainers() {
 
     let iframe = document.createElement("iframe");
 
-    iframe.src = `https://player.vimeo.com/video/${vimeoId}autoplay=1&loop=1&background=1&muted=1`;
+    const separator = vimeoId.includes("?") ? "&" : "?";
+
+    iframe.src = `https://player.vimeo.com/video/${vimeoId}${separator}autoplay=1&loop=1&background=1&muted=1`;
 
     iframe.allow = "autoplay";
     iframe.allowFullscreen = true;
